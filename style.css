@@ -63,7 +63,7 @@ nav {
 .hero {
   position: relative;
   min-height: 90vh;
-  background: url("./assets/banner.jpg") center/cover no-repeat;
+  background: url("./banner.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
 }
