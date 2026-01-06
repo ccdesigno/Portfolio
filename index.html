@@ -2,220 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fatima Rizwan | Product Designer & Frontend Engineer</title>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HEADER / NAVBAR ================= -->
 <header>
   <nav class="container">
     <h1 class="logo">Fatima.</h1>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
   </nav>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="hero container">
-  <div class="hero-text">
-    <h2>Product Designer & Frontend Engineer</h2>
+  <h2>Product Designer & Frontend Engineer</h2>
+  <p>
+    I design and build scalable digital products by combining
+    UI/UX design, frontend development, and mobile application engineering.
+  </p>
 
-    <p>
-      I design and build high-impact digital products—combining
-      UI/UX design, frontend development, and mobile app engineering
-      to deliver scalable, user-centric solutions.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="assets/Fatima-Rizwan-Resume.pdf" class="btn-outline" download>
-        Download Resume
-      </a>
-    </div>
+  <div class="hero-actions">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="./assets/Fatima-Rizwan-Resume.pdf"
+       class="btn-outline"
+       target="_blank"
+       rel="noopener">
+       View Resume
+    </a>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 <section id="about" class="section container">
-  <h3 class="section-title">About Me</h3>
-
-  <p class="about-text">
+  <h3>About Me</h3>
+  <p>
     I’m a Computer Science graduate and multidisciplinary Product Designer
     with hands-on experience in graphic design, frontend web development,
-    and mobile application development.
-    <br /><br />
-    I have designed and engineered production-ready systems including
-    e-commerce platforms, POS applications, HR dashboards, and
-    AI-powered mobile applications.
-    <br /><br />
-    With a strong foundation in visual design and modern frontend
-    technologies, I bridge the gap between aesthetics and functionality—
-    ensuring every product is intuitive, scalable, and business-driven.
+    and mobile app development.
+    <br><br>
+    I’ve built production-ready systems including POS applications,
+    e-commerce platforms, dashboards, and an AI-powered mobile app.
+    I focus on clean UI, strong UX, and maintainable frontend code.
   </p>
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- PROJECTS -->
 <section id="projects" class="section container">
-  <h3 class="section-title">Projects</h3>
+  <h3>Projects</h3>
 
   <div class="project-grid">
 
-    <!-- Project 1 -->
     <div class="project-card">
-      <img src="assets/ai-wardrobe.png" alt="AI Wardrobe App">
-
-      <h4>AI-Powered Digital Wardrobe & Outfit Planner</h4>
-
-      <p>
-        A mobile application that uses Machine Learning and AI
-        to recommend outfits based on mood, occasion, and season.
-      </p>
-
-      <ul class="project-meta">
-        <li><strong>Role:</strong> UI/UX Designer, App Developer</li>
-        <li><strong>Tech:</strong> Flutter, Dart, Machine Learning</li>
-        <li><strong>Type:</strong> Final Year Project</li>
+      <h4>AI-Powered Digital Wardrobe App</h4>
+      <p>Flutter-based mobile app using AI to recommend outfits.</p>
+      <ul>
+        <li>Flutter, Dart, Machine Learning</li>
+        <li>UI/UX + App Development</li>
       </ul>
-
-      <a href="#" class="project-link">View Case Study →</a>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-card">
-      <img src="assets/pos-system.png" alt="POS System">
-
       <h4>POS Web Application</h4>
-
-      <p>
-        Designed and developed a POS system with inventory
-        management, sales tracking, and dashboard analytics.
-      </p>
-
-      <ul class="project-meta">
-        <li><strong>Role:</strong> UI/UX, Frontend Developer</li>
-        <li><strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL</li>
-        <li><strong>Type:</strong> Production System</li>
+      <p>Inventory, sales tracking, and admin dashboards.</p>
+      <ul>
+        <li>HTML, CSS, JS, PHP, MySQL</li>
+        <li>Frontend + UI/UX</li>
       </ul>
-
-      <a href="#" class="project-link">View Case Study →</a>
     </div>
 
-    <!-- Project 3 -->
     <div class="project-card">
-      <img src="assets/ecommerce.png" alt="E-Commerce Website">
-
-      <h4>E-Commerce Web Platform</h4>
-
-      <p>
-        Built a responsive e-commerce website with product
-        management, cart functionality, and checkout flow.
-      </p>
-
-      <ul class="project-meta">
-        <li><strong>Role:</strong> Designer & Frontend Developer</li>
-        <li><strong>Tech:</strong> HTML, CSS, Bootstrap, JavaScript</li>
-        <li><strong>Type:</strong> Client Project</li>
+      <h4>E-Commerce Platform</h4>
+      <p>Responsive e-commerce site with checkout flow.</p>
+      <ul>
+        <li>HTML, CSS, Bootstrap, JS</li>
+        <li>Frontend Development</li>
       </ul>
-
-      <a href="#" class="project-link">View Case Study →</a>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project-card">
-      <img src="assets/ui-redesign.png" alt="UI Redesign">
-
-      <h4>UX/UI Redesign Case Study</h4>
-
-      <p>
-        Redesigned a mobile application focusing on usability,
-        accessibility, and optimized user journeys.
-      </p>
-
-      <ul class="project-meta">
-        <li><strong>Role:</strong> UX/UI Designer</li>
-        <li><strong>Tools:</strong> Figma, Adobe XD</li>
-        <li><strong>Focus:</strong> UX Research & Design Systems</li>
-      </ul>
-
-      <a href="#" class="project-link">View Case Study →</a>
     </div>
 
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="section skills-section">
+<!-- SKILLS -->
+<section id="skills" class="section skills">
   <div class="container">
-    <h3 class="section-title">Skills</h3>
+    <h3>Skills</h3>
 
     <div class="skills-grid">
-
-      <div class="skill-group">
-        <h4>Design</h4>
-        <span>UI Design</span>
-        <span>UX Research</span>
-        <span>Wireframing</span>
-        <span>Design Systems</span>
-        <span>Figma</span>
-        <span>Adobe XD</span>
-        <span>Illustrator</span>
+      <div>
+        <h5>Design</h5>
+        <span>UI Design</span><span>UX Research</span><span>Figma</span>
       </div>
 
-      <div class="skill-group">
-        <h4>Frontend & Web</h4>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>WordPress</span>
+      <div>
+        <h5>Frontend</h5>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
       </div>
 
-      <div class="skill-group">
-        <h4>Mobile & AI</h4>
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Machine Learning</span>
-        <span>AI Recommendation Systems</span>
+      <div>
+        <h5>Mobile & AI</h5>
+        <span>Flutter</span><span>Dart</span><span>Machine Learning</span>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 <section id="contact" class="section container">
-  <h3 class="section-title">Contact</h3>
-
-  <p>
-    Open to full-time roles, internships, and freelance opportunities
-    in UI/UX design, frontend development, and mobile applications.
-  </p>
+  <h3>Contact</h3>
+  <p>Open to full-time roles, internships, and freelance work.</p>
 
   <div class="contact-links">
     <a href="mailto:creativecornerdesign0@gmail.com">Email</a>
-    <a href="https://github.com/ccdesigno" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/fatima-rizwan-ccdesigno-a69230245" target="_blank">LinkedIn</a>
+    <a href="https://github.com/ccdesigno" target="_blank">GitHub</a>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2026 Fatima Rizwan. All rights reserved.</p>
+  © 2026 Fatima Rizwan
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
