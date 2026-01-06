@@ -59,18 +59,35 @@ nav {
 }
 
 /* HERO */
+/* HERO BANNER */
 .hero {
-  padding: 120px 0;
+  position: relative;
+  min-height: 90vh;
+  background: url("./assets/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h2 {
-  font-size: 2.8rem;
+  font-size: clamp(2.4rem, 4.5vw, 3.2rem);
+  max-width: 700px;
 }
 
 .hero p {
   max-width: 600px;
-  margin: 15px 0 30px;
-  color: var(--muted);
+  margin: 18px 0 30px;
+  color: #444;
 }
 
 .hero-actions {
